@@ -6,8 +6,28 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
 
+[tool.ruff]
+line-length = 120
+indent-width = 4
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "D100", # undocumented-public-module
+    "D103", # undocumented-public-function
+    "D104", # undocumented-public-package
+    # conflict
+    "D203", # or D211
+    "D213", # or D212
+    # "COM812", # conflict with formatter
+]
+
+[tool.pyright]
+include = ["src"]
+
 [dependency-groups]
 dev = [
+    "apache-airflow==3.0.1",
     "pyright>=1.1.401",
     "ruff>=0.11.11",
 ]
