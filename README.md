@@ -1,3 +1,7 @@
+# Airflow example
+
+This is a repository for learning Airflow, created with real-world development practices in mind as much as possible.
+
 # Required tools
 
 | name | version | url |
