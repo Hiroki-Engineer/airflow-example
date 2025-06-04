@@ -16,10 +16,12 @@ ignore = [
     "D100", # undocumented-public-module
     "D103", # undocumented-public-function
     "D104", # undocumented-public-package
+    "G004", # logging-f-string
+    "ANN003", # missing-type-kwargs
     # conflict
     "D203", # or D211
     "D213", # or D212
-    # "COM812", # conflict with formatter
+    "COM812", # conflict with formatter
 ]
 
 [tool.pyright]
