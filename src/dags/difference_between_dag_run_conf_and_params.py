@@ -3,6 +3,8 @@ from datetime import UTC, datetime, timedelta
 from airflow.sdk import Param, dag, task
 
 """
+REF: https://github.com/apache/airflow/discussions/37181
+
 scheduled
 params: 5
 conf: None
