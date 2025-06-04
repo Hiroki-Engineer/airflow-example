@@ -9,13 +9,17 @@ scheduled
 params: 5
 conf: None
 
-manual without input
+manual without input (UI)
 params: 5
 conf: 5
 
-manual with 4
+manual with 4 (UI)
 params: 4
 conf: 4
+
+manual with 3 (CLI) <-- airflow dags trigger -c '{"hoge":3}' difference_between_dag_run_conf_and_params
+params: 3
+conf: 3
 """
 
 
